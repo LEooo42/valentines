@@ -1,0 +1,84 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: pink;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+}
+
+.main-container {
+    text-align: center;
+}
+
+#yesButton, #noButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#noButton {
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    border: none;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 70px;
+}
+
+#yesButton{
+    border: none;
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 70px;
+    transition: transform 0.3s ease-in-out
+}
+
+#yesButton:hover{
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+.celebration-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff4f7a;
+    text-shadow: 2px 2px 5px rgba(255, 0, 76, 0.3);
+    margin-bottom: 20px;
+}
+
+.happy-gif {
+    width: 300px; 
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    #noButton {
+        width: 100px;
+        height: 40px;
+    }
+}
